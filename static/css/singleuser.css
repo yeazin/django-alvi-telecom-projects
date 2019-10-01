@@ -1,0 +1,13 @@
+body{background-color:#f5f6fa;}
+.id_p{ text-align:center; font-size:40px;padding:5px;}
+.id_idbox{background:#dcdde1; border:none;padding:0;margin-top:10px;border-radius:20px;}
+
+.user_photo{border-radius:50%;width:250px; height:250px;}
+.user_photo_green {border:3px solid #44bd32}
+.user_photo_red {border:3px solid #e84118;}
+.id_hr{width:500px; margin:0 auto; color:#2f3640; height:5px; margin:10px auto;}
+.table{text-align:center;}
+.user_active_red { background-color:#ff3838;text-align:center;padding:10px;}
+.user_active_red p {color:white; font-size:20; padding:5px;}
+.user_active_green{background-color:#3ae374; text-align:center;padding:10px;}
+.user_active_green p{color:#ffffff; font-size:20; padding:5px;}

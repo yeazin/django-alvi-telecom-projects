@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+    {% block title %} Upcommig Products {% endblock %}
+
+        {% block css %}<link rel="stylesheet" href="{% static 'css/launch.css'%} "> {% endblock %}
+
+
+        {% block body %}
+            <br>
+            <div class="container">
+
+
+                {% if product %}
+
+                <div class="row">
+                    {% for p in product %}
+                    <div class="col-sm-3">
+
+                    <div class="card" style="width: 16rem;">
+                      <img src="{{  p.product_image.urls }}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">{{ p.product_name }}</h5>
+                        <p class="card-text">{{ p.short_description }}</p>
+                        <a href="{% url 'single-up-product' p.id %}" class="btn btn-primary"> Click to show details </a>
+                      </div>
+                    </div>
+                        <br>
+
+                    </div>
+                                {% endfor %}
+                    </div>
+
+                    </div>
+
+                    {% else %}
+
+
+                <h1> There is no Upcomming Products aviable now </h1>
+
+                    {% endif %}
+
+        {% endblock %}

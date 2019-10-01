@@ -1,0 +1,34 @@
+<html>
+
+{% extends 'base.html' %}
+
+
+    {% block title %} User Information {% endblock %}
+
+        {% block body %}
+
+                {% if information %}
+                      {% for users in information %}
+
+                          <a href=" {% url 'single-user' users.id  %}"> {{users.user_first_name}} </a> <br>
+
+
+                        {% endfor %}
+                {% else %}
+
+                <h1> Sorry there is no user here  yet </h1>
+
+                {% endif %}
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+</html>

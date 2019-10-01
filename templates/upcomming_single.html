@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+    {% block title %} Upcomming Products {% endblock %}
+
+        {% block body %}
+
+        <p>Name        : {{ product.product_name }}   </a></p>
+        <p>Condition   : {{ product.product_condition }}</p>
+        <p>price       : {{ product.product_price }}</p>
+        <p>Launch Date :{{product.launch_date }} </p>
+        <p>About       :{{product.product_description}} </p>
+
+    {% endblock %}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}   {% endblock %} </title>
+        {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/main.css'%} " integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        {% load staticfiles %}
+        {% block css %}  {% endblock %}
+
+</head>
+
+
+
+<body class ='container'>
+
+        <nav class="navbar navbar-expand-lg sticky-top  navbar-light navbar-dark bg-dark">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href=" {% url 'home' %} "> Home </a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link" href=" {% url 'all-user' %} "> user Area </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href=" {% url 'products-comming' %} " >Upcomming Products </a>
+      </li>
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+    {% block body %}
+
+
+
+
+
+    {% endblock %}
+</body>
+</html>

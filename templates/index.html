@@ -1,0 +1,17 @@
+        {% extends 'base.html' %}
+
+
+    {% block title %} Home {% endblock %}
+
+
+
+        {% block body %}
+
+        <h1> Hello this is the main page of alvi telecom  </h1>
+        <br>
+         <a href=" {% url 'all-user' %}">go to the user area </a><br>
+        go to the products page <a href="">click here </a> <br>
+
+        go to see our Upcomming products here <a href = " {% url 'products-comming' %} " > ////////// </a>
+
+        {% endblock %}

@@ -1,0 +1,14 @@
+
+
+body{background:black;}
+
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+}
+.card {
+       padding : 1px;
+
+
+}
